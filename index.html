@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreymom Po - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#home" class="logo">SREYMOM</a>
+            <div class="nav-links">
+                <a href="#home" class="active" data-section="home">Home</a>
+                <a href="#about" data-section="about">About</a>
+                <a href="#skills" data-section="skills">Skills</a>
+                <a href="#experience" data-section="experience">Experience</a>
+                <a href="#contact" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>I'm Sreymom Po<br> <span class="highlight">Web Developer</span></h1>
+                    <p>Junior Web Developer| PNC Student | Building Responsive Websites | Open for Internship & Entry-Level Roles.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">VIEW_PORTFOLIO</button>
+                        <a href="#contact" class="btn-outline">HIRE_ME</a>
+                    </div>
+                </div>
+<div class="portrait-container">
+                     <div class="portrait">
+                         <img src="/images/image.png" alt="Sreymom Po" class="profile-img">
+                     </div>
+                     <div class="tag">FULL_STACK</div>
+                     <div class="tag">ARCHITECT</div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-image-wrapper">
+                    <img src="/images/image.png" alt="Coding setup" class="about-img" onerror="this.src='/images/profile.png'; this.onerror=null;" onclick="openImageModal(this.src)">
+                    <div class="experience-badge">
+                        <div class="years-exp">02+</div>
+                        <div class="exp-label">YEARS_EXP</div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    
+                    <h2 class="about-headline">Who is SREYMOM<span class="question-mark">?</span></h2>
+                    <p class="about-text">
+                        I am a motivated Web Development student at PNC with a strong interest in building modern, user-friendly websites. I have been developing my skills in front-end technologies such as HTML, CSS, and JavaScript, and I enjoy turning ideas into real digital experiences.
+                        Through my studies and school projects, I have gained hands-on experience in creating responsive web pages, improving user interface design, and solving technical problems. 
+                    </p>
+                    <div class="stats-matrix">
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects_Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Client_Collaborations</div>
+                        </div>
+                    </div>
+<a href="https://www.canva.com/design/DAHIJMrbBVs/LE3HUMKZniWzc6d051rxww/edit" class="btn-primary cv-btn" target="_blank" rel="noopener noreferrer">
+                         <i data-lucide="download"></i>
+                         DOWNLOAD_CV
+                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="tech-section-header">
+                <span class="badge">● TECHNICAL SKILL ●</span>
+                <h2 class="tech-headline">Technical Proficiency</h2>
+                <p class="tech-description">Experienced with modern web technologies, frameworks, and tools used to create high-performance applications.</p>
+            </div>
+            
+            <div class="terminal-window">
+                <div class="terminal-controls">
+                    <span class="control red"></span>
+                    <span class="control yellow"></span>
+                    <span class="control green"></span>
+                    <span class="terminal-title">system_analysis.log</span>
+                </div>
+                <div class="terminal-content">
+                    <div class="tech-grid">
+                        <div class="tech-column">
+                            <h3 class="tech-header">TECHNICAL SKILLS</h3>
+                            <ul class="skills-list">
+                                <li><span class="item-number">01</span><span class="item-text">HTML/CSS</span><span class="check-icon">✓</span></li>
+                                <li><span class="item-number">02</span><span class="item-text">JavaScript</span><span class="check-icon">✓</span></li>
+                                <li><span class="item-number">03</span><span class="item-text">PHP</span><span class="check-icon">✓</span></li>
+                                <li><span class="item-number">04</span><span class="item-text">MySQL</span><span class="check-icon">✓</span></li>
+                                <li><span class="item-number">05</span><span class="item-text">Node.js (Basic REST API)</span><span class="check-icon">✓</span></li>
+                                <li><span class="item-number">06</span><span class="item-text">OOP with TypeScript</span><span class="check-icon">✓</span></li>
+                                <li><span class="item-number">08</span><span class="item-text">Design with Figma</span><span class="check-icon">✓</span></li>
+                            </ul>
+                        </div>
+                        <div class="tech-column">
+                            <h3 class="tech-header">TOOLS</h3>
+                            <div class="tools-grid">
+                                <div class="tool-card"><div class="tool-icon">🔧</div><span class="tool-name">Git</span></div>
+                                <div class="tool-card"><div class="tool-icon">🐙</div><span class="tool-name">GitHub</span></div>
+                                <div class="tool-card"><div class="tool-icon">🎫</div><span class="tool-name">Jira</span></div>
+                                <div class="tool-card"><div class="tool-icon">🎨</div><span class="tool-name">Figma</span></div>
+                                <div class="tool-card"><div class="tool-icon">📮</div><span class="tool-name">Postman</span></div>
+                                <div class="tool-card"><div class="tool-icon">▲</div><span class="tool-name">Vercel</span></div>
+                                <div class="tool-card"><div class="tool-icon">☁️</div><span class="tool-name">AWS (EC2)</span></div>
+                                <div class="tool-card"><div class="tool-icon">🤖</div><span class="tool-name">AI Tools</span></div>
+                                <div class="tool-card"><div class="tool-icon">📄</div><span class="tool-name">MS Office</span></div>
+                            </div>
+                        </div>
+                    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header-wrapper">
+                <div class="header-left">
+                    <span class="badge">● SERVICES | SERVICES I PROVIDE</span>
+                    <h2 class="headline">Experience</h2>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-row">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="project-icon">
+                                <i data-lucide="code"></i>
+                            </div>
+                            <span class="project-tag">RETAIL SERVICE</span>
+                            <h3>VC1 Project (Chong Choul System)</h3>
+                            <div class="project-date">FEB 16, 2026</div>
+                            <ul class="project-description">
+                                <li>Developed and tested the "Chong Choul" system using technologies such as HTML, CSS, JavaScript, Laravel, Vue.js, and GitHub.</li>
+                                <li>Debugged the system, reported issues to developers, and collaborated with the QA team to verify bug fixes.</li>
+                                <li>Ensured system functionality met quality standards and improved system stability.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="project-icon">
+                                <i data-lucide="shopping-cart"></i>
+                            </div>
+                            <span class="project-tag">E-commerce Website</span>
+                            <h3>BACK PACK</h3>
+                            <div class="project-date">MAY 5, 2025</div>
+                            <ul class="project-description">
+                                <li>Developed a high-performance storefront using HTML, CSS and JavaScript, Figma, Responsive and AI tools to supporting my project.</li>
+                                <li>Gained valuable experience in Frontend and problem solving.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="project-icon">
+                                <i data-lucide="sticky-note"></i>
+                            </div>
+                            <span class="project-tag">PRODUCTIVITY_SOLUTIONS</span>
+                            <h3>Note Taker System</h3>
+                            <div class="project-date">DEC 29, 2025</div>
+                            <ul class="project-description">
+                                <li>Developed and tested the "Note Taker" system using HTML, CSS, JavaScript, and GitHub.</li>
+                                <li>Implemented task tracking features with JavaScript and coordinated project activities while assisting team members with technical challenges.</li>
+                                <li>Communicated effectively with the team to meet project deadlines.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="contact" class="section">
+         <div class="container">
+<div class="contact-section-header">
+                  <span class="badge">● CONTACT INFO ●</span>
+                  <h2 class="contact-headline">Contact & Join Together</h2>
+                  <p class="contact-description">I’m always open to discussing new projects, creative ideas, and development opportunities.</p>
+              </div>
+             <div class="contact-grid">
+                 <div class="contact-card">
+                     <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                     <div class="contact-label">LOCATION</div>
+                     <h3 class="contact-title">PNC</h3>
+                     <p class="contact-details">treet 371, Phum Tropeang Chhuk(Borey Sorla) Sangkat Tek Thla, Khan Sen Sok, Phnom Penh</p>
+                 </div>
+                 <div class="contact-card">
+                     <div class="contact-icon"><i data-lucide="phone"></i></div>
+                     <div class="contact-label">24*7 SERVICE</div>
+                     <h3 class="contact-title">Call Us On</h3>
+                     <p class="contact-details">Tel: +1 (+855) 07033 0950, Mob: +1 (+855) 070330950</p>
+                 </div>
+                 <div class="contact-card">
+                     <div class="contact-icon"><i data-lucide="mail"></i></div>
+                     <div class="contact-label">Email</div>
+                     <h3 class="contact-title">Mail Address</h3>
+                     <p class="contact-details">sreymom.po@student.passerellesnumeriques.org</p>
+                 </div>
+<div class="contact-card">
+                      <div class="contact-icon"><i data-lucide="link"></i></div>
+                      <div class="contact-label">LINKEDIN</div>
+                      <h3 class="contact-title">LinkedIn</h3>
+                      <a href="https://www.linkedin.com/in/sreymom-po-8980743a1/" class="contact-details" target="_blank" rel="noopener noreferrer">@sreymom-po</a>
+                  </div>
+             </div>
+</div>
+     </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>© 2026 // ALL_SYSTEMS_OPERATIONAL</div>
+                <div class="footer-links">
+                    <a href="#">GITHUB</a><a href="#">LINKEDIN</a><a href="#">STACK_OVERFLOW</a>
+                    <span class="status">STATUS: AVAILABLE_FOR_HIRE</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
