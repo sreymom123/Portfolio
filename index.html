@@ -1,263 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sreymom Po - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Sreymom Po - Web Developer Portfolio showcasing projects, skills and experience">
+  <meta name="author" content="Sreymom Po">
+  <title>SREYMOM PO | Web Developer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="#home" class="logo">SREYMOM</a>
-            <div class="nav-links">
-                <a href="#home" class="active" data-section="home">Home</a>
-                <a href="#about" data-section="about">About</a>
-                <a href="#skills" data-section="skills">Skills</a>
-                <a href="#experience" data-section="experience">Experience</a>
-                <a href="#contact" data-section="contact">Contact</a>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <h2>SP</h2>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+        <!-- <a href="#contact" class="talk-btn">Contact</a> -->
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact">Let's Talk</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fas fa-code"></i> Available for opportunities
             </div>
-        </div>
-    </nav>
-
-    <section id="home" class="section">
-        <div class="container">
-            <div class="hero">
-                <div class="hero-text">
-                    <h1>I'm Sreymom Po<br> <span class="highlight">Web Developer</span></h1>
-                    <p>Junior Web Developer| PNC Student | Building Responsive Websites | Open for Internship & Entry-Level Roles.</p>
-                    <div class="hero-buttons">
-                        <button class="btn-primary">VIEW_PORTFOLIO</button>
-                        <a href="#contact" class="btn-outline">HIRE_ME</a>
-                    </div>
-                </div>
-<div class="portrait-container">
-                     <div class="portrait">
-                         <img src="/images/image.png" alt="Sreymom Po" class="profile-img">
-                     </div>
-                     <div class="tag">FULL_STACK</div>
-                     <div class="tag">ARCHITECT</div>
-                 </div>
+            <h1>SREYMOM <span class="hero-name">PO</span></h1>
+            <div class="hero-title">
+              <i class="fa-solid fa-graduation-cap"></i> Junior Web Developer| PNC Student | Building Responsive Websites | Open for Internship & Entry-Level Roles.
             </div>
-        </div>
-    </section>
-
-    <hr class="section-divider">
-
-    <section id="about" class="section">
-        <div class="container">
-            <div class="about-layout">
-                <div class="about-image-wrapper">
-                    <img src="/images/image.png" alt="Coding setup" class="about-img" onerror="this.src='/images/profile.png'; this.onerror=null;" onclick="openImageModal(this.src)">
-                    <div class="experience-badge">
-                        <div class="years-exp">02+</div>
-                        <div class="exp-label">YEARS_EXP</div>
-                    </div>
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">
+                <i class="fas fa-arrow-down"></i> View My Work
+              </a>
+              <a href="#contact" class="btn-outline">
+                <i class="fas fa-comment"></i> Contact Me
+              </a>
+            </div>
+            <div class="quote">
+              <i class="fas fa-map-marker-alt"></i> Phnom Penh, Cambodia | PNC Student | QA Testing focus
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="profile-card">
+                <div class="profile-image">
+                <img src="assets/images/profile.png" alt="Sreymom PO">
                 </div>
                 
-                <div class="about-content">
-                    
-                    <h2 class="about-headline">Who is SREYMOM<span class="question-mark">?</span></h2>
-                    <p class="about-text">
-                        I am a motivated Web Development student at PNC with a strong interest in building modern, user-friendly websites. I have been developing my skills in front-end technologies such as HTML, CSS, and JavaScript, and I enjoy turning ideas into real digital experiences.
-                        Through my studies and school projects, I have gained hands-on experience in creating responsive web pages, improving user interface design, and solving technical problems. 
-                    </p>
-                    <div class="stats-matrix">
-                        <div class="stat-card">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Projects_Completed</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">8+</div>
-                            <div class="stat-label">Client_Collaborations</div>
-                        </div>
-                    </div>
-<a href="https://www.canva.com/design/DAHIJMrbBVs/LE3HUMKZniWzc6d051rxww/edit" class="btn-primary cv-btn" target="_blank" rel="noopener noreferrer">
-                         <i data-lucide="download"></i>
-                         DOWNLOAD_CV
-                     </a>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- About Section -->
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+          <p class="about-text">
+            <strong>👋 I'm Sreymom Po</strong>, a Khmer national born on January 23th, 2006 in Kampong Thom Province. 
+            Web Developer with hands-on experience in both front-end and back-end development. Currently studying Web Programming at Passerelles Numeriques Cambodia, pursuing an Associate Degree. Proficient in HTML, CSS, JavaScript, PHP, Node js and OOP in TypeScript. Focused on user experience, teamwork, and delivering quality results.
+          </p>
+          <p class="about-education">
+            <i class="fas fa-graduation-cap"></i> Currently pursuing Associate Degree at Passerelles Numeriques Cambodia (PNC) 2025-Present. 
+            Graduate from Tril High School (2024).
+          </p>
+        </div>
+      </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">WHAT I KNOW</h2>
+        
+        <div class="skills-container">
+            <!-- Programming Languages -->
+            <div class="skill-group">
+                <h3 class="skill-group-title"><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skill-icons-grid">
+                <div class="skill-icon-card">
+                    <img src="assets/icons/javascript.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/typescript.png" alt="TypeScript">
+                    <p>TypeScript</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/php.png" alt="PHP">
+                    <p>PHP</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Frontend Development -->
+            <div class="skill-group">
+                <h3 class="skill-group-title"><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+                <div class="skill-icons-grid">
+                <div class="skill-icon-card">
+                    <img src="assets/icons/html5.png" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/css3.png" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/vuejs.png" alt="Vue.js">
+                    <p>Vue.js</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/tailwind.png" alt="Tailwind">
+                    <p>Tailwind</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Backend & Frameworks -->
+            <div class="skill-group">
+                <h3 class="skill-group-title"><i class="fas fa-server"></i> Backend & Frameworks</h3>
+                <div class="skill-icons-grid">
+                <div class="skill-icon-card">
+                    <img src="assets/icons/nodejs.png" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/laravel.png" alt="Laravel">
+                    <p>Laravel</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/firebase.png" alt="Firebase">
+                    <p>Firebase</p>
+                </div>
+            </div>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-group">
+                <h3 class="skill-group-title"><i class="fas fa-database"></i> Database</h3>
+                <div class="skill-icons-grid">
+                <div class="skill-icon-card">
+                    <img src="assets/icons/mysql.png" alt="MySQL">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/mongodb.png" alt="MongoDB">
+                    <p>MongoDB</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- AI Tools -->
+            <div class="skill-group">
+                <h3 class="skill-group-title"><i class="fas fa-robot"></i> AI Tools</h3>
+                <div class="skill-icons-grid">
+                <div class="skill-icon-card">
+                    <img src="assets/icons/chatgpt.png" alt="ChatGPT">
+                    <p>ChatGPT</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/claude.png" alt="Claude">
+                    <p>Claude</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/copilot.png" alt="Copilot">
+                    <p>GitHub Copilot</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/deepseek.png" alt="DeepSeek">
+                    <p>DeepSeek AI</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Tools & DevOps -->
+            <div class="skill-group">
+                <h3 class="skill-group-title"><i class="fas fa-tools"></i> Tools & DevOps</h3>
+                <div class="skill-icons-grid">
+                <div class="skill-icon-card">
+                    <img src="assets/icons/github.png" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/docker.png" alt="Docker">
+                    <p>Docker</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/postman.png" alt="Postman">
+                    <p>Postman</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/wordpress.png" alt="WordPress">
+                    <p>WordPress</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/jira.png" alt="Jira">
+                    <p>Jira</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/figma.png" alt="Figma">
+                    <p>Figma</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/canva.png" alt="Canva">
+                    <p>Canva</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/aws.png" alt="AWS">
+                    <p>AWS</p>
+                </div>
+                <div class="skill-icon-card">
+                    <img src="assets/icons/vercel.png" alt="Vercel">
+                    <p>Vercel</p>
+                </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <hr class="section-divider">
-
-    <section id="skills" class="section">
-        <div class="container">
-            <div class="tech-section-header">
-                <span class="badge">● TECHNICAL SKILL ●</span>
-                <h2 class="tech-headline">Technical Proficiency</h2>
-                <p class="tech-description">Experienced with modern web technologies, frameworks, and tools used to create high-performance applications.</p>
-            </div>
-            
-            <div class="terminal-window">
-                <div class="terminal-controls">
-                    <span class="control red"></span>
-                    <span class="control yellow"></span>
-                    <span class="control green"></span>
-                    <span class="terminal-title">system_analysis.log</span>
-                </div>
-                <div class="terminal-content">
-                    <div class="tech-grid">
-                        <div class="tech-column">
-                            <h3 class="tech-header">TECHNICAL SKILLS</h3>
-                            <ul class="skills-list">
-                                <li><span class="item-number">01</span><span class="item-text">HTML/CSS</span><span class="check-icon">✓</span></li>
-                                <li><span class="item-number">02</span><span class="item-text">JavaScript</span><span class="check-icon">✓</span></li>
-                                <li><span class="item-number">03</span><span class="item-text">PHP</span><span class="check-icon">✓</span></li>
-                                <li><span class="item-number">04</span><span class="item-text">MySQL</span><span class="check-icon">✓</span></li>
-                                <li><span class="item-number">05</span><span class="item-text">Node.js (Basic REST API)</span><span class="check-icon">✓</span></li>
-                                <li><span class="item-number">06</span><span class="item-text">OOP with TypeScript</span><span class="check-icon">✓</span></li>
-                                <li><span class="item-number">08</span><span class="item-text">Design with Figma</span><span class="check-icon">✓</span></li>
-                            </ul>
-                        </div>
-                        <div class="tech-column">
-                            <h3 class="tech-header">TOOLS</h3>
-                            <div class="tools-grid">
-                                <div class="tool-card"><div class="tool-icon">🔧</div><span class="tool-name">Git</span></div>
-                                <div class="tool-card"><div class="tool-icon">🐙</div><span class="tool-name">GitHub</span></div>
-                                <div class="tool-card"><div class="tool-icon">🎫</div><span class="tool-name">Jira</span></div>
-                                <div class="tool-card"><div class="tool-icon">🎨</div><span class="tool-name">Figma</span></div>
-                                <div class="tool-card"><div class="tool-icon">📮</div><span class="tool-name">Postman</span></div>
-                                <div class="tool-card"><div class="tool-icon">▲</div><span class="tool-name">Vercel</span></div>
-                                <div class="tool-card"><div class="tool-icon">☁️</div><span class="tool-name">AWS (EC2)</span></div>
-                                <div class="tool-card"><div class="tool-icon">🤖</div><span class="tool-name">AI Tools</span></div>
-                                <div class="tool-card"><div class="tool-icon">📄</div><span class="tool-name">MS Office</span></div>
-                            </div>
-                        </div>
-                    </div>
-</div>
-            </div>
+      <!-- Experience Section -->
+      <section id="experience">
+        <h2 class="section-title">Experience & Roles</h2>
+        <div class="experience-list">
+          <div class="exp-item">
+            <h4> VC1 Project (Service Rental Vehicles)</h4>
+            <li>Developed and tested the "Chong Choul" system using technologies such as HTML, CSS, JavaScript, Laravel, Vue.js, and GitHub.</li>
+            <li>Debugged the system, reported issues to developers, and collaborated with the QA team to verify bug fixes.
+            <li>Ensured system functionality met quality standards and improved system stability.</li>
+          </div>
+          <div class="exp-item">
+            <h4>E-commerce Website</h4>
+            <li>Developed a high-performance storefront using HTML, CSS and JavaScript, Figma, Responsive and AI tools to supporting my project.</li>
+            <li>Gained valuable experience in Frontend and problem solving.</li>
+          </div>
+          <div class="exp-item">
+            <h4>Note Taker System</h4>
+            <li>Developed and tested the "Note Taker" system using HTML, CSS, JavaScript, and GitHub.</li>
+            <li>Implemented task tracking features with JavaScript and coordinated project activities while assisting team members with technical challenges.</li>
+            <li>Communicated effectively with the team to meet project deadlines.</li>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <hr class="section-divider">
-
-    <section id="experience" class="section experience-section">
-        <div class="container">
-            <div class="section-header-wrapper">
-                <div class="header-left">
-                    <span class="badge">● SERVICES | SERVICES I PROVIDE</span>
-                    <h2 class="headline">Experience</h2>
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2 class="section-title">MY WORK · Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-visual visual-rental">
+              <div class="project-image-wrapper">
+                <img src="assets/images/Rental_project.png" alt="Rental Project" class="project-card-img">
+                <div class="project-image-overlay">
+                  <span class="visual-text">Chong Choul Rental</span>
                 </div>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-row">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="project-icon">
-                                <i data-lucide="code"></i>
-                            </div>
-                            <span class="project-tag">RETAIL SERVICE</span>
-                            <h3>VC1 Project (Chong Choul System)</h3>
-                            <div class="project-date">FEB 16, 2026</div>
-                            <ul class="project-description">
-                                <li>Developed and tested the "Chong Choul" system using technologies such as HTML, CSS, JavaScript, Laravel, Vue.js, and GitHub.</li>
-                                <li>Debugged the system, reported issues to developers, and collaborated with the QA team to verify bug fixes.</li>
-                                <li>Ensured system functionality met quality standards and improved system stability.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="project-icon">
-                                <i data-lucide="shopping-cart"></i>
-                            </div>
-                            <span class="project-tag">E-commerce Website</span>
-                            <h3>BACK PACK</h3>
-                            <div class="project-date">MAY 5, 2025</div>
-                            <ul class="project-description">
-                                <li>Developed a high-performance storefront using HTML, CSS and JavaScript, Figma, Responsive and AI tools to supporting my project.</li>
-                                <li>Gained valuable experience in Frontend and problem solving.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="project-icon">
-                                <i data-lucide="sticky-note"></i>
-                            </div>
-                            <span class="project-tag">PRODUCTIVITY_SOLUTIONS</span>
-                            <h3>Note Taker System</h3>
-                            <div class="project-date">DEC 29, 2025</div>
-                            <ul class="project-description">
-                                <li>Developed and tested the "Note Taker" system using HTML, CSS, JavaScript, and GitHub.</li>
-                                <li>Implemented task tracking features with JavaScript and coordinated project activities while assisting team members with technical challenges.</li>
-                                <li>Communicated effectively with the team to meet project deadlines.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-</div>
-    </section>
-
-    <hr class="section-divider">
-
-    <section id="contact" class="section">
-         <div class="container">
-<div class="contact-section-header">
-                  <span class="badge">● CONTACT INFO ●</span>
-                  <h2 class="contact-headline">Contact & Join Together</h2>
-                  <p class="contact-description">I’m always open to discussing new projects, creative ideas, and development opportunities.</p>
               </div>
-             <div class="contact-grid">
-                 <div class="contact-card">
-                     <div class="contact-icon"><i data-lucide="map-pin"></i></div>
-                     <div class="contact-label">LOCATION</div>
-                     <h3 class="contact-title">PNC</h3>
-                     <p class="contact-details">treet 371, Phum Tropeang Chhuk(Borey Sorla) Sangkat Tek Thla, Khan Sen Sok, Phnom Penh</p>
-                 </div>
-                 <div class="contact-card">
-                     <div class="contact-icon"><i data-lucide="phone"></i></div>
-                     <div class="contact-label">24*7 SERVICE</div>
-                     <h3 class="contact-title">Call Us On</h3>
-                     <p class="contact-details">Tel: +1 (+855) 07033 0950, Mob: +1 (+855) 070330950</p>
-                 </div>
-                 <div class="contact-card">
-                     <div class="contact-icon"><i data-lucide="mail"></i></div>
-                     <div class="contact-label">Email</div>
-                     <h3 class="contact-title">Mail Address</h3>
-                     <p class="contact-details">sreymom.po@student.passerellesnumeriques.org</p>
-                 </div>
-<div class="contact-card">
-                      <div class="contact-icon"><i data-lucide="link"></i></div>
-                      <div class="contact-label">LINKEDIN</div>
-                      <h3 class="contact-title">LinkedIn</h3>
-                      <a href="https://www.linkedin.com/in/sreymom-po-8980743a1/" class="contact-details" target="_blank" rel="noopener noreferrer">@sreymom-po</a>
-                  </div>
-             </div>
-</div>
-     </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>© 2026 // ALL_SYSTEMS_OPERATIONAL</div>
-                <div class="footer-links">
-                    <a href="#">GITHUB</a><a href="#">LINKEDIN</a><a href="#">STACK_OVERFLOW</a>
-                    <span class="status">STATUS: AVAILABLE_FOR_HIRE</span>
-                </div>
             </div>
+            <div class="project-info">
+              <h3>Rental Project</h3>
+              <div class="project-tags">
+                <span>Vue.js</span><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Jira</span><span>Postman</span><span>GitHub</span>
+              </div>
+              <p class="project-desc">Rent motorbikes, bicycles, cars. Search nearby shops, select duration, book instantly. Full-stack with Jira collaboration.</p>
+              <div class="project-actions">
+                <a href="https://chongchoul.online/" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i> View Live
+                </a>
+                <a href="https://github.com/deth2026/Rental_Service.git" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-backpack">
+              <img src="assets/images/E-commerce.png" alt="Backpack E-commerce" class="project-card-img">
+            </div>
+            <div class="project-info">
+              <h3>Backpack (E-commerce)</h3>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>Figma</span><span>GitHub</span>
+              </div>
+              <p class="project-desc">Static website with product view, clean UI for users, and a product listing page.</p>
+              <div class="project-actions">
+                <a href="https://github.com/sreymom123/PROJECT-WEBSIT.git" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-notes">
+              <img src="assets/images/Note-taker.png" alt="Note Taker" class="project-card-img">
+            </div>
+            <div class="project-info">
+              <h3>Note Taker</h3>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span><span>GitHub</span>
+              </div>
+              <p class="project-desc">Role-based access, upload songs, autoplay, real-time search and random song pick. SweetAlert2 + Vercel deployment.</p>
+              <div class="project-actions">
+                <a href="https://github.com/Sreyvik19/Note_Taker_C3.git" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
-    </footer>
+      </section>
 
-    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
-        <span class="close-modal">&times;</span>
-        <img class="modal-content" id="modalImg">
+      <!-- Events/Workshops Section -->
+      <section id="events">
+        <h2 class="section-title">LEARNING JOURNEY · Workshops</h2>
+        <div class="events-list">
+          <div class="event-item">
+            <div class="event-date"><i class="far fa-calendar-alt"></i> 2026</div>
+            <h4>Database Administrator</h4>
+            <p>Presenter: Mr.Rem Hay (Senior Database Administrator). Introduction about the Database Administrator role and responsibilities.
+            Advice about job Database Administrator.
+            What we need to know before becoming a Database Administrator.
+          </div>
+          <div class="event-item">
+            <div class="event-date"><i class="far fa-calendar-alt"></i>2026</div>
+            <h4>QA Software Tester</h4>
+            <p>Presenter: Mr. Meok Borith (Senior QA Software Tester) Learn about QA & QC, Type of QA
+Role as QA Software Tester, skill of QA should have.</p>
+          </div>
+          <div class="event-item">
+            <div class="event-date"><i class="far fa-calendar-alt"></i> March 15, 2026</div>
+            <h4>UX/UI Design</h4>
+            <p>Presenter: Ms.Poeun Sokunthea (Senior UX/UI Design) Role of UX/UI Design, and tool commonly
+Responsibilities as a UX/UI Designer.
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2 class="section-title">Contact & Connect</h2>
+        <div class="contact-flex">
+          <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> (+855) 70330950</p>
+            <p><i class="fas fa-envelope"></i> sreymom.po@student.passerellesnumeriques.org</p>
+            <p><i class="fas fa-map-pin"></i> BP 511, Phum Tropeang Chhuk (Borey Sorla), Street 371, Phnom Penh</p>
+            <p><i class="fas fa-globe"></i> <a href="#">https://www.program-pnc.site/</a></p>
+            <p><i class="fa-brands fa-linkedin"></i> https://www.linkedin.com/in/sreymom-po-8980743a1/</p>
+          </div>
+          <div class="contact-info contact-message">
+            <h3><i class="fas fa-paper-plane"></i> Let's Talk</h3>
+            <p>I'm actively looking for new opportunities and collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <div class="contact-btn">
+              <a href="https://t.me/Sreymom_Po" class="btn-primary">
+                <i class="fas fa-envelope"></i> Send Message
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <script src="/js/main.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Sreymom PO.  Web Developer focused on clean, user-friendly digital solutions.</p>
+        
+      </div>
+    </footer>
+  </main>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
 </body>
 </html>
